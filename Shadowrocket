@@ -23,7 +23,7 @@ dns-server = 1.1.1.1, 94.140.14.14, 94.140.15.15
 fallback-dns-server = system
 
 # Ссылка для ручного обновления конфига
-update-url =
+update-url = https://raw.githubusercontent.com/Cyber-Xyrma/ShadowrocketRoutes/main/Shadowrocket
 
 # Правила выборочного роутинга
 [Rule]
