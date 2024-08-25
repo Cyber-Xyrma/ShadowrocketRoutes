@@ -8,8 +8,9 @@
 # Основные настройки
 [General]
 
-# Бай-пасс, исключает определенный диапазон ip-адресов
+# активация настроки обхода (если поставить фалс интересно что будет)
 bypass-system = true
+
 
 # Указываем какие диапазоны пропускать
 skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, localhost, *.local, captive.apple.com
@@ -18,7 +19,7 @@ bypass-tun = 10.0.0.0/8, 100.64.0.0/10, 127.0.0.0/8, 169.254.0.0/16, 172.16.0.0/
 # Альтернативные DNS-адреса, можно указать свои от сервера AdGuard Home
 dns-server = 1.1.1.1, 94.140.14.14, 94.140.15.15
 
-# Запасной DNS-сервер по умолчанию системный
+# Запасной DNS-сервер по умолчанию системный (если не будут работать днс выше то активируется системный днс тот, что провайдер выдается)
 fallback-dns-server = system
 
 # Ссылка для ручного обновления конфига
@@ -31,6 +32,9 @@ update-url =
 RULE-SET,https://raw.githubusercontent.com/misha-tgshv/shadowrocket-configuration-file/main/antifilter.list,PROXY # Список сообщества antifilter, обновляется 1 раз в час
 RULE-SET,https://raw.githubusercontent.com/misha-tgshv/shadowrocket-configuration-file/main/proxy.list,PROXY # Личный список, обновляется по необходиомости
 RULE-SET,https://raw.githubusercontent.com/misha-tgshv/shadowrocket-configuration-file/main/proxy-youtube.list,PROXY # Список доменов Youtube
+
+# Опционально. Если домен в базе Geolite2 из РФ, то трафик идет напрямую
+GEOIP,RU,DIRECT
 
 # Финальное правило, трафик через оператора
 FINAL,DIRECT
