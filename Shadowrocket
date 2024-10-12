@@ -3,7 +3,7 @@
 # ОПИСАНИЕ: весь трафик через провайдера, кроме тех, что в списке
 # РЕПО:
 ## ДИПЛИНК:
-# UPDATED: 24-08-2024 06:37:19
+# UPDATED: 12-09-2024 09:37:19
 
 # Основные настройки
 [General]
@@ -13,11 +13,11 @@ bypass-system = true
 
 
 # Указываем какие диапазоны пропускать
-skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, localhost, *.local, captive.apple.com, 2ip.ru
+skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, localhost, *.local, captive.apple.com,
 bypass-tun = 10.0.0.0/8, 100.64.0.0/10, 127.0.0.0/8, 169.254.0.0/16, 172.16.0.0/12, 192.0.0.0/24, 192.0.2.0/24, 192.88.99.0/24, 192.168.0.0/16, 198.18.0.0/15, 198.51.100.0/24, 203.0.113.0/24, 224.0.0.0/4, 255.255.255.255/32
 
 # Альтернативные DNS-адреса, можно указать свои от сервера AdGuard Home
-dns-server = 1.1.1.1, 94.140.14.14, 94.140.15.15
+dns-server = 94.140.14.14, 94.140.15.15
 
 # Запасной DNS-сервер по умолчанию системный (если не будут работать днс выше то активируется системный днс тот, что провайдер выдается)
 fallback-dns-server = system
@@ -29,9 +29,9 @@ update-url = https://raw.githubusercontent.com/Cyber-Xyrma/ShadowrocketRoutes/ma
 [Rule]
 
 # Подключаем списки доменов и ip-адресов через прокси
-RULE-SET,https://raw.githubusercontent.com/misha-tgshv/shadowrocket-configuration-file/main/antifilter.list,PROXY # Список сообщества antifilter, обновляется 1 раз в час
-RULE-SET,https://raw.githubusercontent.com/misha-tgshv/shadowrocket-configuration-file/main/proxy.list,PROXY # Личный список, обновляется по необходиомости
-RULE-SET,https://raw.githubusercontent.com/misha-tgshv/shadowrocket-configuration-file/main/proxy-youtube.list,PROXY # Список доменов Youtube
+RULE-SET,https://raw.githubusercontent.com/Cyber-Xyrma/ShadowrocketRoutes/refs/heads/main/antifilter.list,PROXY # Список сообщества antifilter ничего не обновляется скачан с архивов
+RULE-SET,hhttps://raw.githubusercontent.com/Cyber-Xyrma/ShadowrocketRoutes/refs/heads/main/proxy.list,PROXY # Личный список, обновляется по необходиомости
+RULE-SET,https://raw.githubusercontent.com/Cyber-Xyrma/ShadowrocketRoutes/refs/heads/main/proxy-youtube.list,PROXY # Список доменов Youtube
 
 # Опционально. Если домен в базе Geolite2 из РФ, то трафик идет напрямую
 GEOIP,RU,DIRECT
