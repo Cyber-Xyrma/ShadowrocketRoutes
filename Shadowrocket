@@ -30,7 +30,7 @@ update-url = https://raw.githubusercontent.com/Cyber-Xyrma/ShadowrocketRoutes/ma
 
 # Подключаем списки доменов и ip-адресов через прокси
 RULE-SET,https://raw.githubusercontent.com/Cyber-Xyrma/ShadowrocketRoutes/refs/heads/main/antifilter.list,PROXY # Список сообщества antifilter ничего не обновляется скачан с архивов
-RULE-SET,hhttps://raw.githubusercontent.com/Cyber-Xyrma/ShadowrocketRoutes/refs/heads/main/proxy.list,PROXY # Личный список, обновляется по необходиомости
+RULE-SET,https://raw.githubusercontent.com/Cyber-Xyrma/ShadowrocketRoutes/refs/heads/main/proxy.list,PROXY # Личный список, обновляется по необходиомости
 RULE-SET,https://raw.githubusercontent.com/Cyber-Xyrma/ShadowrocketRoutes/refs/heads/main/proxy-youtube.list,PROXY # Список доменов Youtube
 
 # Опционально. Если домен в базе Geolite2 из РФ, то трафик идет напрямую
