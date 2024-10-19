@@ -62,4 +62,5 @@ DOMAIN-KEYWORD,kahoot
 DOMAIN-KEYWORD,instagram
 DOMAIN-KEYWORD,spotify
 DOMAIN-KEYWORD,deezer
-DOMAIN-KEYWORD,pornhub
+DOMAIN-SUFFIX,pornhub
+DOMAIN-SUFFIX,rt-pornhub.com
